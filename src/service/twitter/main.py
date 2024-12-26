@@ -88,12 +88,12 @@ class Twitter:
 
             next_token = resp.meta.get("next_token", None)
             if not resp.data:
-                return None, next_token
+                return [], next_token
 
-            def form_data_created_at(raw) -> datetime:
-                if isinstance(raw, datetime):
+            def form_data_created_at(raw: any) -> datetime:
+                if raw and isinstance(raw, datetime):
                     return raw
-                if isinstance(raw, str):
+                if raw and isinstance(raw, str):
                     return datetime.fromisoformat(raw)
                 return datetime.fromtimestamp("1970-01-01T00:00:00Z")
 
@@ -103,9 +103,7 @@ class Twitter:
                     data_id=d.get("id", ""),
                     text=d.get("text", ""),
                     author_id=d.get("author_id", ""),
-                    data_created_at=form_data_created_at(
-                        d.get("created_at", "1970-01-01T00:00:00Z")
-                    ),
+                    data_created_at=form_data_created_at(d.get("created_at")),
                     input_data=query,
                 )
                 for d in resp.data

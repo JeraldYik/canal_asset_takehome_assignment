@@ -47,3 +47,7 @@ Provide examples of database query and data scraping
 Refer to the `README.md` in the individual subfolders of `src/service` to view comments.
 
 Refer to `Makefile` to view the executable commands.
+
+Add `env/.env` environment variables, following the template defined in `env/template.env`.
+
+Refer to `/sample_logs` for logs without running the main script.

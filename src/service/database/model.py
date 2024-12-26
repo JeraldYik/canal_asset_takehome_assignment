@@ -1,8 +1,7 @@
 from datetime import datetime
 
 from sqlalchemy import DateTime, Integer, String
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import Mapped, mapped_column
+from sqlalchemy.orm import Mapped, declarative_base, mapped_column
 
 Base = declarative_base()
 
@@ -20,3 +19,7 @@ class SocialMediaData(Base):
 
     def __str__(self):
         return f"SocialMediaData(id={self.id}, source={self.source}, data_id={self.data_id}, text={self.text}, author_id={self.author_id}, data_created_at={self.data_created_at}, input_data={self.input_data})"
+
+
+if __name__ == "__main__":
+    pass

@@ -1,5 +1,3 @@
-import logging
-
 from src.config.consts import *
 from src.config.util import must_init
 from src.util.util import singleton
@@ -9,7 +7,7 @@ from src.util.util import singleton
 class Config:
     def __init__(self):
         self.IS_TWITTER_MOCK = bool(int(must_init(IS_TWITTER_MOCK_KEY)))
-        logging.info("IS_TWITTER_MOCK: %s", self.IS_TWITTER_MOCK)
+        print("IS_TWITTER_MOCK:", self.IS_TWITTER_MOCK)
         self.TWITTER_BEARER_TOKEN = must_init(TWITTER_BEARER_TOKEN_KEY)
         self.TWITTER_KEYWORDS = must_init(TWITTER_KEYWORDS_KEY).split(",")
         # Hashtag should be prepended with #

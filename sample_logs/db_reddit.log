@@ -1,0 +1,20 @@
+make db_reddit 
+python3 src/service/database/query.py --source reddit
+2024-12-26 13:52:28,532 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2024-12-26 13:52:28,534 INFO sqlalchemy.engine.Engine SELECT social_media_data.id AS social_media_data_id, social_media_data.source AS social_media_data_source, social_media_data.data_id AS social_media_data_data_id, social_media_data.text AS social_media_data_text, social_media_data.author_id AS social_media_data_author_id, social_media_data.data_created_at AS social_media_data_data_created_at, social_media_data.input_data AS social_media_data_input_data 
+FROM social_media_data 
+WHERE social_media_data.source = ?
+2024-12-26 13:52:28,534 INFO sqlalchemy.engine.Engine [generated in 0.00009s] ('reddit',)
+SocialMediaData(id=11, source=reddit, data_id=1hmhjoq, text=<Tangem Ring Wallet Reviews?> Hey everyone,
+
+I’m looking into getting a new cold wallet and came across the Tangem Ring Wallet. The form factor looks really interesting, especially since it’s wearable, which could add convenience compared to traditional USB-like devices like Ledger or Trezor. However, I’m curious about real-world experiences with this wallet rather than relying on YouTube reviews, many of which seem paid or sponsored.
+
+Does anyone here use the Tangem Ring Wallet?
+
+I’m trying to understand how well it stacks up in terms of security, ease of use, and reliability over time. Any honest feedback would be super helpful!, author_id=Fun-Technology-1371, data_created_at=2024-12-26 05:15:29, input_data=cryptocurrency)
+
+--------------------------------
+
+
+Query found 1 rows
+2024-12-26 13:52:28,534 INFO sqlalchemy.engine.Engine ROLLBACK

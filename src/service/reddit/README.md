@@ -10,9 +10,11 @@ https://asyncpraw.readthedocs.io/en/stable/getting_started/authentication.html
 
 ## General flow
 
+`asyncpraw`/`praw` is a wrapper SDK that interacts with the Reddit API endpoint. `asyncpraw`/`praw` assists with authentication, formation of requests and responses to and from Reddit API respectively, as well as rate-limiting. It is recommended to close the client when the program is tearing down.
+
 1. Initialise reddit client, as well as desired subreddits.
 2. Each subreddit query request is run asynchronously.
-3. PRAW handles rate limit automatically, however we can still add our own rate limit value for greater control
+3. `asyncpraw`/`praw` handles rate limit automatically, however we can still add our own rate limit value for greater control
 4. Any non-explicit errors from http response are retried
 
 ## Mocking

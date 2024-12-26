@@ -8,7 +8,7 @@ logging.basicConfig(level=logging.DEBUG, filename="app.log", force=True)
 
 
 async def main():
-    print("Script started. Logs are written to app.log")
+    print("Script started. Logs are written to app.log. Hit Ctrl+C to kill the script.")
 
     twitter = Twitter()
     reddit = Reddit()

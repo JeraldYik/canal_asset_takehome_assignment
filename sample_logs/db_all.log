@@ -1,0 +1,89 @@
+make db
+python3 src/service/database/query.py
+2024-12-26 13:55:24,727 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2024-12-26 13:55:24,728 INFO sqlalchemy.engine.Engine SELECT social_media_data.id AS social_media_data_id, social_media_data.source AS social_media_data_source, social_media_data.data_id AS social_media_data_data_id, social_media_data.text AS social_media_data_text, social_media_data.author_id AS social_media_data_author_id, social_media_data.data_created_at AS social_media_data_data_created_at, social_media_data.input_data AS social_media_data_input_data 
+FROM social_media_data 
+WHERE 1 = 1
+2024-12-26 13:55:24,728 INFO sqlalchemy.engine.Engine [generated in 0.00008s] ()
+SocialMediaData(id=1, source=twitter, data_id=1872157627234550148, text=RT @QuitM56710: 💼 Quit My Job (QMJ) 💼
+
+Dreaming of freedom? 🌟 QMJ is fully decentralized &amp; community-owned! 🚀
+
+📄 Contract: CC5TLf58B2CYTbh2…, author_id=1869985874458681344, data_created_at=2024-12-26 05:48:55, input_data=python OR solidity OR #crypto OR #canal)
+
+--------------------------------
+
+SocialMediaData(id=2, source=twitter, data_id=1872157619932234166, text=RT @VirginiaSolAI: Today is the 10th day of the creation of $CAI, the token of our artificial intelligence army. And 20 new holders joined…, author_id=1840258201171963904, data_created_at=2024-12-26 05:48:54, input_data=python OR solidity OR #crypto OR #canal)
+
+--------------------------------
+
+SocialMediaData(id=3, source=twitter, data_id=1872157607303290905, text=RT @Cryptodaily_ann: Celebrate Taskmas with us and win your share of 50,000 USDT and more in rewards! 🎁🎉
+
+Join the festive fun from 17th-31…, author_id=1872156562170785792, data_created_at=2024-12-26 05:48:51, input_data=python OR solidity OR #crypto OR #canal)
+
+--------------------------------
+
+SocialMediaData(id=4, source=twitter, data_id=1872157602945343670, text=RT @Memestone_Art: #REALPEPE and #REALDOGE: Two sides, one balance.
+
+#Memestone $RD $RP #Airdrop #Mining #DOGS #Hamster #Crypto #Tron #aird…, author_id=1860275910068383744, data_created_at=2024-12-26 05:48:50, input_data=python OR solidity OR #crypto OR #canal)
+
+--------------------------------
+
+SocialMediaData(id=5, source=twitter, data_id=1872157601724878853, text=Hope Everyone had a wonderful Christmas 🎄 
+#XRPArmy 
+@CKJCryptonews @CryptoMillion33 @xrzillas 
+#XRPL 
+#Crypto #XRP #blockchain 
+
+$XBF runs on #Ripple 
+
+🎁 @xpmarket  🎁 https://t.co/6AuCZXyKxg https://t.co/MjiGHBXNk4, author_id=1389266354931445762, data_created_at=2024-12-26 05:48:49, input_data=python OR solidity OR #crypto OR #canal)
+
+--------------------------------
+
+SocialMediaData(id=6, source=twitter, data_id=1872157597509501023, text=RT @alphant_crypto: $10,000 Alphant #airdrop is now live!
+🎉 We've got some great stuff for Christmas.
+If you want to win over $1,000, join…, author_id=1859498516613337088, data_created_at=2024-12-26 05:48:48, input_data=python OR solidity OR #crypto OR #canal)
+
+--------------------------------
+
+SocialMediaData(id=7, source=twitter, data_id=1872157597077565863, text=Finally got it! 🎁 My Christmas gift to myself 🎄 @OneKeyHQ
+💎 #OneKey #HardwareWallet #Crypto" https://t.co/G3UAzQQ39s, author_id=1866800559132643331, data_created_at=2024-12-26 05:48:48, input_data=python OR solidity OR #crypto OR #canal)
+
+--------------------------------
+
+SocialMediaData(id=8, source=twitter, data_id=1872157594871304433, text=Level up your #crypto game with our advanced trading signals.
+
+$BTC $ETH $XRP $SHIB $SOL $DOGE $MNT $ONDO $WIF $XTZ $FLOKI $TAI $PEPE $HBAR $FTT $RUNE $YFI $AAVE $APT $KAS $UNI $PNUT $BRETT $SUI $BONK $WLD $BGB $FTM $QNT $DYDX $INJ $LTC
+
+Join us today
+⬇️https://t.co/FgHbyeSiQL, author_id=1796963439581048832, data_created_at=2024-12-26 05:48:48, input_data=python OR solidity OR #crypto OR #canal)
+
+--------------------------------
+
+SocialMediaData(id=9, source=twitter, data_id=1872157592329556455, text=RT @Cryptodaily_ann: 🥳 Join this Taskmas Celebration with TaskOn &amp; Crypto Daily!!
+
+🏆 Rewards »» 400 $USDT
+
+🌟 Like, RT and Join here👇
+https:…, author_id=1868885690882441218, data_created_at=2024-12-26 05:48:47, input_data=python OR solidity OR #crypto OR #canal)
+
+--------------------------------
+
+SocialMediaData(id=10, source=twitter, data_id=1872157589561352570, text=Join me for dice and slots with unlimited faucet,  grab treasure boxes to share  BTC bonus pool! #Dice #Slots #BTC #Gaming #OnlineCasino #crypto #onlinegaming https://t.co/SRMFJRltbf, author_id=1485861734095204353, data_created_at=2024-12-26 05:48:47, input_data=python OR solidity OR #crypto OR #canal)
+
+--------------------------------
+
+SocialMediaData(id=11, source=reddit, data_id=1hmhjoq, text=<Tangem Ring Wallet Reviews?> Hey everyone,
+
+I’m looking into getting a new cold wallet and came across the Tangem Ring Wallet. The form factor looks really interesting, especially since it’s wearable, which could add convenience compared to traditional USB-like devices like Ledger or Trezor. However, I’m curious about real-world experiences with this wallet rather than relying on YouTube reviews, many of which seem paid or sponsored.
+
+Does anyone here use the Tangem Ring Wallet?
+
+I’m trying to understand how well it stacks up in terms of security, ease of use, and reliability over time. Any honest feedback would be super helpful!, author_id=Fun-Technology-1371, data_created_at=2024-12-26 05:15:29, input_data=cryptocurrency)
+
+--------------------------------
+
+
+Query found 11 rows
+2024-12-26 13:55:24,729 INFO sqlalchemy.engine.Engine ROLLBACK
